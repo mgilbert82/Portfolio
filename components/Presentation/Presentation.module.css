@@ -1,0 +1,24 @@
+.container {
+    display: block;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.column {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    margin-top: 0.5rem;
+    padding: 2rem;
+}
+
+.leftColumn {
+    border-right: 2px solid #C0038D;
+    padding: 5%;
+
+}
+
+.rightColumn {
+    margin-left: 5%;
+    margin-top: 1rem;
+}

@@ -1,0 +1,15 @@
+.quote {
+    color: #009FD3;
+    text-align: center;
+    width: 60%;
+    padding: 0.4rem;
+    margin: 0 auto;
+    border-top: 1px solid rgb(240, 141, 214);
+    border-radius: 15px;
+    box-shadow: 0px 1px 2px rgba(238, 89, 198, 0.9);
+    font-size: 0.8rem;
+}
+
+.author {
+    color: chartreuse;
+}

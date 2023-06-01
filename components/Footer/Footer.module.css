@@ -1,0 +1,41 @@
+.footerContainer {
+    position: absolute;
+    background-color: black;
+    width: 100vw;
+    height: 50px;
+    color: #ffffff;
+}
+
+.textFooter {
+    text-align: center;
+    color: white;
+}
+
+.socialMediaContainer {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    justify-content: center;
+    margin: 0 auto;
+    padding-bottom: 1rem;
+    padding-top: 0.5rem;
+    width: 60%;
+}
+
+.socialButton {
+    width: 30px;
+    color: white;
+    margin-left: 1rem;
+}
+
+.footerContainer>hr {
+    width: 20%;
+    margin: 0 auto;
+}
+
+.mailColor:hover,
+.githubColor:hover,
+.linkedinColor:hover,
+.instagramColor:hover {
+    width: 35px;
+    transition: all 0.2s ease;
+}

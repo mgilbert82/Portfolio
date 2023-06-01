@@ -1,0 +1,66 @@
+.formContainer {
+    border-radius: 20px;
+    background: #009FD3;
+    margin: auto;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(2, 1fr);
+    width: 60%;
+    margin-bottom: 2rem;
+}
+
+.leftContainer {
+    display: flex;
+    /* background-image: url('../../public/assets/images/contactForm.jpeg'); */
+    border-radius: 20px 0 0 20px;
+}
+
+.contactImg {
+    border-radius: 20px 0 0 20px;
+    object-fit: cover;
+
+}
+
+.rightContainer {
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    align-self: center;
+    padding: 1rem;
+}
+
+.rightContainer>h2 {
+    color: #f3a916;
+    padding-bottom: 1rem;
+    align-self: center;
+    text-shadow: 2px 2px 2px #2a021f;
+}
+
+.inputDiv {
+    padding: 0.5rem;
+}
+
+.inputDiv>input,
+.inputDiv>textarea {
+    display: block;
+    width: 15rem;
+    max-width: 15rem;
+    text-indent: 0.4rem;
+    color: #2a021f;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.rightContainer>form>button {
+    background-color: #f3a916;
+    margin-top: 2em;
+    font-size: 0.8em;
+    width: 5rem;
+    padding: 0.3em;
+    border-radius: 20px;
+    border: 1px solid #f3a916;
+}
+
+.inputDiv>textarea {
+    height: 10rem;
+}

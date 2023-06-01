@@ -1,0 +1,83 @@
+{
+  "worksData": [
+    {
+      "title": "Arval ShowCase",
+      "subtitle": "The F3 Store made to illustrate all the project, product and service available",
+      "body": "Development of a showcase site for the company BNP Arval, in order to promote the various projects and services offered internally. The goal was to have a CRUD system to feed content. Using Strapi for the backend was a quick and efficient solution. I had an imperative, to integrate the Arval design system developed with tailwind css which I had to integrate using the Angular framework.",
+      "year": "2022-2023",
+      "category": "Web Development",
+      "tags": [
+        "Angular",
+        "Strapi CMS",
+        "Tailwindcss"
+      ],
+      "weblink": "https://f3-store-front-int.k8s-f3-sta-b560d24d3e02cbb7e0f17430cde8bae9-0000.eu-de.containers.appdomain.cloud/",
+      "images": [
+        "/assets/images/works/arval1.jpg"
+      ]
+    },
+    {
+      "title": "Photograph portfolio",
+      "subtitle": "Made to illustrate my photographic creations",
+      "body": "Resulting from a study project, I modified it in order to illustrate my many photographs of which I am passionate. My many travels have allowed me to discover magnificent landscapes and I like to capture these delicious moments where time is frozen forever.",
+      "year": "2022",
+      "category": "Web Development",
+      "tags": [
+        "Php",
+        "Wordpress",
+        "Elementor",
+        "Css"
+      ],
+      "weblink": "https://www.treblig.fr/galeriesphoto",
+      "images": [
+        "/assets/images/works/photograph.png"
+      ]
+    },
+    {
+      "title": "Secours catholique",
+      "subtitle": "An associative site to promote the actions of the association of the popular relief of the city of Saint Cyr l'Ecole",
+      "body": "Project carried out as a volunteer to help the association in its communication and the sharing of these actions and thanks",
+      "year": "2023",
+      "category": "Web Development, style Design",
+      "tags": [
+        "html",
+        "PHP",
+        "SQL"
+      ],
+      "weblink": "https://www.spf78210.treblig.fr/",
+      "images": [
+        "/assets/images/works/secours-populaire.png"
+      ]
+    },
+    {
+      "title": "Craftsman carpenter",
+      "subtitle": "A showcase made to illustrate the services of a craftsman",
+      "body": "A site developed on behalf of a craftsman who wishes to highlight the services offered online and gain visibility",
+      "year": "2023",
+      "category": "Web Development, Logo creation",
+      "tags": [
+        "Php",
+        "Wordpress",
+        "Css"
+      ],
+      "weblink": "https://www.amr28.com/",
+      "images": [
+        "/assets/images/works/amr28.png"
+      ]
+    },
+    {
+      "title": "gravida aenean non nascetur taciti venenatis lectus lobortis",
+      "subtitle": "gravida aenean non nascetur taciti venenatis lectus lobortis",
+      "year": "gravida aenean non nascetur taciti venenatis lectus lobortis",
+      "category": "gravida aenean non nascetur taciti venenatis lectus lobortis",
+      "tags": [
+        "gravida aenean non nascetur taciti venenatis lectus lobortis"
+      ],
+      "weblink": "gravida aenean non nascetur taciti venenatis lectus lobortis",
+      "images": [
+        "/assets/images/works/amr28.png"
+      ],
+      "body": "gravida aenean non nascetur taciti venenatis lectus lobortis"
+    }
+  ]
+}

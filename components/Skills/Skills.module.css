@@ -1,0 +1,170 @@
+.container {
+    display: block;
+    justify-content: center;
+    padding: 1rem 2rem;
+}
+
+.container>h2 {
+    margin-top: 2rem;
+    padding-bottom: 1rem;
+    text-align: center;
+}
+
+.column {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    margin-top: 1rem;
+    margin-bottom: 4rem;
+    padding: 1rem;
+}
+
+.leftColumn {
+    padding-right: 5%;
+}
+
+.borderPink {
+    border-right: 2px solid #C0038D;
+}
+
+.borderBlue {
+    border-right: 2px solid #009FD3;
+}
+
+.leftColumn>h3,
+.rightColumn>h3 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.highlightTxt {
+    color: #C0038D;
+}
+
+.skill {
+    margin: 1em 0;
+    position: relative;
+    width: 80%;
+}
+
+.skillOuterBar {
+    background-color: #F5F3DF;
+    border-radius: 8px;
+    width: 80%;
+}
+
+.skillInnerBar {
+    border-radius: 8px 0 0 8px;
+}
+
+.skillInnerBar {
+    animation: fillBar 1s forwards;
+    transform: scaleX(0);
+    transform-origin: 0 0;
+}
+
+.htmlColor {
+    background-color: #e34c26;
+}
+
+.jsColor {
+    background-color: #F0DB4F;
+    color: #323330;
+}
+
+.cssColor {
+    background-color: #264de4;
+}
+
+.phpColor {
+    background-color: #AEB2D5;
+}
+
+.mysqlColor {
+    background-color: #F29111;
+}
+
+.postgresColor {
+    background-color: #cc3b03;
+}
+
+.skill50 {
+    width: 50%;
+}
+
+.skill80 {
+    width: 80%;
+}
+
+.skill70 {
+    width: 70%;
+}
+
+.skill60 {
+    width: 60%;
+}
+
+.skillInnerBar>p {
+    margin: 10px;
+
+}
+
+@keyframes fillBar {
+    to {
+        transform: scaleX(1);
+    }
+}
+
+.rightColumn {
+    padding-left: 5%;
+}
+
+.frameworkText {
+    margin-bottom: 1rem;
+}
+
+.frameworkText::first-letter {
+    font-size: 1.3rem;
+    margin-left: 1rem;
+}
+
+.frameworkLogo {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    justify-content: center;
+    margin-top: 0.5rem;
+}
+
+.imgContent {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    width: 3em;
+    background-color: #F5F3DF;
+    border-radius: 50%;
+    margin: 3%;
+}
+
+.imgLogo {
+    /* position: relative !important;
+    top: 10%;
+    left: 10%; */
+    display: block;
+    justify-content: center;
+    align-items: center;
+    scale: 0.8;
+}
+
+.logoContent {
+    display: flex;
+    flex-direction: row !important;
+    justify-content: center;
+}
+
+.link {
+    color: #009FD3;
+}
+
+.link:hover {
+    color: #F5F3DF;
+}

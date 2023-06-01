@@ -1,0 +1,32 @@
+.containerNavbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: black;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    font-size: 1.2rem;
+    color: #F5F3DF;
+    width: 100vw;
+}
+
+.navbar a {
+    margin: 10px;
+    color: #C0038D;
+    text-shadow: none;
+    transition: all 0.5ms;
+}
+
+.navbar::first-letter:hover {
+    border-bottom: 1px solid #C0038D;
+}
+
+.navbar a:hover {
+    color: #F5F3DF;
+    text-shadow: 1px 2px #C0038D;
+    font-family: 'Hubballi', cursive;
+    transition: all 0.5ms;
+}
