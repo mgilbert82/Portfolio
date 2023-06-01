@@ -3,8 +3,8 @@ import Head from "next/head";
 import Presentation from "../components/Presentation/Presentation";
 import Title from "../components/Title/Title";
 import Skills from "../components/Skills/Skills";
-import Form from "../components/Form/form";
-import Footer from "../components/Footer/footer";
+import Form from "../components/Form/Form";
+import Footer from "../components/Footer/Footer";
 
 export default function Home() {
   return (

@@ -5,10 +5,9 @@ import linkedin from "../../public/assets/logo/linkedinLogo.svg";
 import instagram from "../../public/assets/logo/instagramLogo.svg";
 import github from "../../public/assets/logo/githubLogo.svg";
 import mail from "../../public/assets/logo/mailLogo.svg";
-
 import Link from "next/link";
 
-export default function footer() {
+export default function Footer() {
   return (
     <div className={styles.footerContainer}>
       <div className={styles.textFooter}>

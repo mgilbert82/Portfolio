@@ -1,16 +1,14 @@
-import React from "react";
 import styles from "./Quote.module.css";
-import { quotesData } from "../../json/quotes";
-import { useEffect, useState } from "react";
+import { quotesData } from "../../json/quotes.json";
+import { React, useEffect, useState } from "react";
 
-export default function Quote({ quotes }) {
+export default function Quote() {
   const [key, setKey] = useState(0);
 
   useEffect(
-    () => setKey(Math.floor(Math.random() * Math.floor(quotelength))),
+    () => setKey(Math.floor(Math.random() * Math.floor(quotesData.length))),
     []
   );
-  let quotelength = quotesData.length;
 
   return (
     <>
@@ -21,11 +19,3 @@ export default function Quote({ quotes }) {
     </>
   );
 }
-
-export const getStaticProps = async () => {
-  return {
-    props: {
-      quotes: quotesData,
-    },
-  };
-};
