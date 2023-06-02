@@ -2,7 +2,7 @@ import React from "react";
 
 const slides = [];
 
-export default function ImageSlider({ children: works }) {
+export default function Slider({ children: works }) {
   return;
   <div>
     <div>
