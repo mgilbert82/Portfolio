@@ -12,6 +12,8 @@ export default function Index({ works }) {
     <>
       {
         <div className={styles.container}>
+          <h1 className={styles.h1}> All my works</h1>
+
           {works.map((work, key) => (
             // Article Block
             <div className={styles.article} key={key}>
@@ -27,9 +29,10 @@ export default function Index({ works }) {
                   <div className={styles.category}>
                     Category: {work.category}
                   </div>
-                  <hr className={styles.hr} />
                   {/* Article Body */}
                   <div className={styles.articleBody}>{work.body}</div>
+                  <hr className={styles.hr} />
+
                   {/* Web Link */}
                   {work.weblink ? (
                     <div className={styles.weblinkContainer}>
@@ -52,6 +55,7 @@ export default function Index({ works }) {
                       </div>
                     ))}
                   </div>
+
                   {/* Carousel Block */}
                   <div className={styles.imagesContainer}>
                     {work.images.map((image, id) => (

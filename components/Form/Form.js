@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./Form.module.css";
-import img1 from "../../public/assets/images/website/contactForm.jpeg";
+import img1 from "../../public/assets/images/website/contactForm.svg";
 import Image from "next/image";
 
 export default function Form() {
@@ -10,10 +10,9 @@ export default function Form() {
         <Image
           src={img1}
           className={styles.contactImg}
-          width="2927"
-          height="2912"
-          alt="Plage"
-          placeholder="blur"
+          width="108.18"
+          height="153.66"
+          alt="Indian-mango"
         />
       </div>
       <div className={styles.rightContainer}>

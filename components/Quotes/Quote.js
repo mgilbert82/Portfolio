@@ -13,6 +13,8 @@ export default function Quote() {
   return (
     <>
       <div className={styles.quote}>
+        <hr className={styles.hr} />
+        <br />
         <blockquote>&quot;{quotesData[key].citation}&quot;</blockquote>
         <div className={styles.author}>{quotesData[key].author}</div>
       </div>

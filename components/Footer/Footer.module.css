@@ -36,6 +36,5 @@
 .githubColor:hover,
 .linkedinColor:hover,
 .instagramColor:hover {
-    width: 35px;
     transition: all 0.2s ease;
 }

@@ -6,6 +6,12 @@
     align-items: center;
 }
 
+.h1 {
+    text-align: center;
+    text-shadow: 2px 2px 2px #F5F3DF;
+
+}
+
 .article {
     display: grid;
     grid-template-rows: auto;
@@ -43,14 +49,17 @@
 }
 
 .weblinkContainer {
-    padding-top: 2rem;
+    padding-top: 1.4rem;
+    text-align: center;
 }
 
 .weblink {
     background-color: #009FD3;
     padding: 2%;
     border-radius: 20px;
-    font-size: 0.9rem;
+    font-size: 1rem;
+    font-weight: 300;
+    border: 1px solid #F5F3DF;
 }
 
 .weblink:hover {
@@ -165,7 +174,7 @@
 
 .button {
     width: 100%;
-    margin: 0 auto;
+    /* margin: 0 auto; */
     height: 3rem;
     background-color: #C0038D;
     border-radius: 30px;

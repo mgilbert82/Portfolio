@@ -1,7 +1,9 @@
 import React from "react";
 import Image from "next/image";
 import styles from "./Presentation.module.css";
-import img1 from "../../public/assets/images/website/img1.jpg";
+// import img1 from "../../public/assets/images/website/img1.jpg";
+import minigilmi from "../../public/assets/images/website/mini-gilmi.png";
+import shadow from "../../public/assets/images/website/ombre.png";
 
 export default function Presentation() {
   return (
@@ -24,13 +26,26 @@ export default function Presentation() {
             </article>
           </div>
           <div className={styles.rightColumn}>
-            <Image
-              src={img1}
-              width="5184"
-              height="3456"
-              alt="img1"
-              placeholder="blur"
-            />
+            <div className={styles.minigilmi}>
+              <Image
+                src={minigilmi}
+                width="178.29"
+                height="176.9"
+                alt="minigilmi"
+                placeholder="blur"
+              />
+            </div>
+
+            <br />
+            <div className={styles.shadow}>
+              <Image
+                src={shadow}
+                width="217.12"
+                height="45.35"
+                alt="ombre"
+                placeholder="blur"
+              />
+            </div>
           </div>
         </div>
       </div>

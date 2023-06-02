@@ -1,0 +1,13 @@
+.blogContainer {
+    padding: 2rem 2rem;
+    margin: 3rem;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.h1 {
+    text-align: center;
+    text-shadow: 2px 2px 2px #F5F3DF;
+
+}
