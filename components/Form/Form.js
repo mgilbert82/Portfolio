@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import { useForm } from 'react-hook-form';
 import Lottie from 'lottie-react';
 import emailAnimated from '../../public/assets/images/website/email-animated.json';
+import styles from './Form.module.css';
 
 const ContactForm = () => {
   //Variables
@@ -45,7 +46,7 @@ const ContactForm = () => {
   };
 
   return (
-    <div className=' m-4 mx-auto mb-10'>
+    <div className='container'>
       {/* Animation */}
       <div className='grid grid-cols-2 gap-2'>
         <div>

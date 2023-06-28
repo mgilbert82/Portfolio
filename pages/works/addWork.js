@@ -55,13 +55,7 @@ export default function AddWork() {
           <label htmlFor="title" className={styles.label}>
             Title
           </label>
-          <input
-            ref={title}
-            type="text"
-            id="title"
-            className={styles.input}
-            defaultValue="gravida aenean non nascetur taciti venenatis lectus lobortis"
-          />
+          <input ref={title} type="text" id="title" className={styles.input} />
         </div>
         {/* Subtitle */}
         <div className={styles.labelControl}>
@@ -73,7 +67,6 @@ export default function AddWork() {
             id="subtitle"
             rows={2}
             className={styles.input}
-            defaultValue="gravida aenean non nascetur taciti venenatis lectus lobortis"
           />
         </div>
         {/* Date */}
@@ -81,73 +74,42 @@ export default function AddWork() {
           <label htmlFor="year" className={styles.label}>
             Date
           </label>
-          <input
-            ref={year}
-            id="year"
-            className={styles.input}
-            defaultValue="gravida aenean non nascetur taciti venenatis lectus lobortis"
-          />
+          <input ref={year} id="year" className={styles.input} />
         </div>
         {/* Category */}
         <div className={styles.labelControl}>
           <label htmlFor="category" className={styles.label}>
             Category
           </label>
-          <input
-            ref={category}
-            id="category"
-            className={styles.input}
-            defaultValue="gravida aenean non nascetur taciti venenatis lectus lobortis"
-          />
+          <input ref={category} id="category" className={styles.input} />
         </div>
         {/* Tags */}
         <div className={styles.labelControl}>
           <label htmlFor="tags" className={styles.label}>
             Tags
           </label>
-          <input
-            ref={tags}
-            id="tags"
-            className={styles.input}
-            defaultValue="gravida aenean non nascetur taciti venenatis lectus lobortis"
-          />
+          <input ref={tags} id="tags" className={styles.input} />
         </div>
         {/* Weblink */}
         <div className={styles.labelControl}>
           <label htmlFor="weblink" className={styles.label}>
             Weblink
           </label>
-          <input
-            ref={weblink}
-            id="weblink"
-            className={styles.input}
-            defaultValue="gravida aenean non nascetur taciti venenatis lectus lobortis"
-          />
+          <input ref={weblink} id="weblink" className={styles.input} />
         </div>
         {/* Image */}
         <div className={styles.labelControl}>
           <label htmlFor="image" className={styles.label}>
             Image Path
           </label>
-          <input
-            ref={image}
-            id="image"
-            className={styles.input}
-            defaultValue="gravida aenean non nascetur taciti venenatis lectus lobortis"
-          />
+          <input ref={image} id="image" className={styles.input} />
         </div>
         {/* Content */}
         <div className={styles.labelControl}>
           <label htmlFor="content" className={styles.label}>
             Content
           </label>
-          <textarea
-            ref={body}
-            id="content"
-            rows={5}
-            className={styles.input}
-            defaultValue="gravida aenean non nascetur taciti venenatis lectus lobortis"
-          />
+          <textarea ref={body} id="content" rows={5} className={styles.input} />
         </div>
 
         <button className={styles.button}>Save the work</button>

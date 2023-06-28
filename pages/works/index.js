@@ -7,13 +7,11 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Image from "next/image";
 
 export default function Index({ works }) {
-  // console.log(works);
   return (
     <>
       {
         <div className={styles.container}>
           <h1 className={styles.h1}> All my works</h1>
-
           {works.map((work, key) => (
             // Article Block
             <div className={styles.article} key={key}>
@@ -32,7 +30,6 @@ export default function Index({ works }) {
                   {/* Article Body */}
                   <div className={styles.articleBody}>{work.body}</div>
                   <hr className={styles.hr} />
-
                   {/* Web Link */}
                   {work.weblink ? (
                     <div className={styles.weblinkContainer}>
