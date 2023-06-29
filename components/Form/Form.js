@@ -1,9 +1,6 @@
 'use client';
 import React, { useState } from 'react';
 import { useForm } from 'react-hook-form';
-import Lottie from 'lottie-react';
-import emailAnimated from '../../public/assets/images/website/email-animated.json';
-import styles from './Form.module.css';
 
 const ContactForm = () => {
   //Variables
@@ -47,86 +44,80 @@ const ContactForm = () => {
 
   return (
     <div className='container'>
-      {/* Animation */}
-      <div className='grid grid-cols-2 gap-2'>
-        <div>
-          <Lottie animationData={emailAnimated} />
-        </div>
-        {/* Formulaire */}
-        <div className='m-2'>
-          <form
-            className='grid grid-rows mx-auto'
-            onSubmit={handleSubmit(onSubmitHandler)}
-          >
-            {isSended && (
-              <p>
-                Votre message a bien été envoyé avec succès nous vous
-                répondrons rapidement !
-              </p>
-            )}
-            <div className='grid grid-cols-2 gap-2'>
-              <input
-                type='text'
-                id='name'
-                {...register('name', { required: true })}
-                placeholder='votre prénom'
-                className='bg-blue p-2 text-white rounded mb-2 placeholder:text-pink'
-              />
-
-              <input
-                type='text'
-                id='surname'
-                {...register('surname', { required: true })}
-                placeholder='votre nom'
-                className='bg-blue p-2 text-white rounded mb-2 placeholder:text-pink'
-              />
-            </div>
-            {errors.name && (
-              <small className='m-2 text-yellow'>
-                Vous avez oublié de saisir votre prénom
-              </small>
-            )}
-            {errors.surname && (
-              <small className='m-2 text-yellow'>
-                Vous avez oublié de saisir votre nom
-              </small>
-            )}
+      {/* Formulaire */}
+      <div className='w-2/4 mx-auto'>
+        <form
+          className='grid grid-rows mx-auto'
+          onSubmit={handleSubmit(onSubmitHandler)}
+        >
+          {isSended && (
+            <p>
+              Votre message a bien été envoyé avec succès nous vous
+              répondrons rapidement !
+            </p>
+          )}
+          <div className='grid grid-cols-2 gap-2'>
             <input
-              type='email'
-              id='email'
-              {...register('email', { required: true })}
-              placeholder='votre adresse email'
-              className='bg-blue p-2 text-white rounded mb-2 placeholder:text-pink'
+              type='text'
+              id='name'
+              {...register('name', { required: true })}
+              placeholder='votre prénom'
+              className='p-2 rounded mb-2'
             />
-            {errors.email && (
-              <small className='m-2 text-yellow'>
-                Vous avez oublié de saisir votre email
-              </small>
-            )}
-            <textarea
-              id='content'
-              {...register('content', { required: true })}
-              cols='30'
-              rows='8'
-              className='bg-blue p-2 text-white rounded mb-4 placeholder:text-pink'
-              placeholder='Bonjour ...
+
+            <input
+              type='text'
+              id='surname'
+              {...register('surname', { required: true })}
+              placeholder='votre nom'
+              className=' p-2 rounded mb-2'
+            />
+          </div>
+          {errors.name && (
+            <small className='m-2 text-yellow'>
+              Vous avez oublié de saisir votre prénom
+            </small>
+          )}
+          {errors.surname && (
+            <small className='m-2 text-yellow'>
+              Vous avez oublié de saisir votre nom
+            </small>
+          )}
+          <input
+            type='email'
+            id='email'
+            {...register('email', { required: true })}
+            placeholder='votre adresse email'
+            className=' p-2 rounded mb-2'
+          />
+          {errors.email && (
+            <small className='m-2 text-yellow'>
+              Vous avez oublié de saisir votre email
+            </small>
+          )}
+          <textarea
+            id='content'
+            {...register('content', { required: true })}
+            cols='30'
+            rows='8'
+            className=' p-2 rounded mb-4'
+            placeholder='Bonjour ...
             '
-            />
-            {errors.content && (
-              <small className='m-2 text-yellow'>
-                Vous avez oublié de saisir votre message
-              </small>
-            )}
-            {!isLoading && (
-              <button
-                className='p-2 mx-auto rounded-xl border-2 text-pink'
-                type='submit'
-              >
-                Envoyer
-              </button>
-            )}
-          </form>
-        </div>
+          />
+          {errors.content && (
+            <small className='m-2 text-yellow'>
+              Vous avez oublié de saisir votre message
+            </small>
+          )}
+          {!isLoading && (
+            <button
+              className='p-2 mx-auto rounded-xl border-2 text-pink'
+              type='submit'
+            >
+              Envoyer
+            </button>
+          )}
+        </form>
       </div>
     </div>
   );
