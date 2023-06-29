@@ -33,7 +33,8 @@ h1 {
   font-size: 2.5rem;
   font-weight: bold;
   line-height: 32px;
-  color: #C0038D;
+  color: rgb(0, 159, 211);
+  color: linear-gradient(180deg, rgba(0, 159, 211, 1) 0%, rgba(0, 159, 211, 0.5561312607944733) 51%, rgba(0, 159, 211, 0.227979274611399) 100%);
 
   @media (min-width: 768px) {
     font-size: 40px;
@@ -85,4 +86,15 @@ h5 {
   font-size: 0.75rem;
   font-weight: normal;
   line-height: 16px;
+}
+
+input,
+textarea {
+  color: black;
+  background-color: #009FD3;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #F5F3DF;
 }

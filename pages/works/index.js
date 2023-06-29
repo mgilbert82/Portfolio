@@ -1,17 +1,17 @@
-import { React } from "react";
-import styles from "./works.module.css";
-import { worksData } from "../../json/works.json";
-import Link from "next/link";
-import { faLink } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import Image from "next/image";
+import { React } from 'react';
+import styles from './works.module.css';
+import { worksData } from '../../json/works.json';
+import Link from 'next/link';
+import { faLink } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import Image from 'next/image';
 
 export default function Index({ works }) {
   return (
     <>
       {
         <div className={styles.container}>
-          <h1 className={styles.h1}> All my works</h1>
+          <h1 className='text-center'> All my works</h1>
           {works.map((work, key) => (
             // Article Block
             <div className={styles.article} key={key}>
@@ -28,17 +28,23 @@ export default function Index({ works }) {
                     Category: {work.category}
                   </div>
                   {/* Article Body */}
-                  <div className={styles.articleBody}>{work.body}</div>
+                  <div className={styles.articleBody}>
+                    {work.body}
+                  </div>
                   <hr className={styles.hr} />
                   {/* Web Link */}
                   {work.weblink ? (
                     <div className={styles.weblinkContainer}>
-                      <Link href={work.weblink} className={styles.weblink}>
-                        <FontAwesomeIcon icon={faLink} /> Go to the webapp
+                      <Link
+                        href={work.weblink}
+                        className={styles.weblink}
+                      >
+                        <FontAwesomeIcon icon={faLink} /> Go to the
+                        webapp
                       </Link>
                     </div>
                   ) : (
-                    ""
+                    ''
                   )}
                 </div>
                 {/* Image & Tag Block */}
@@ -61,12 +67,14 @@ export default function Index({ works }) {
                         key={id}
                         width={500}
                         height={400}
-                        alt="images"
+                        alt='images'
                         className={styles.images}
                       />
                     ))}
                   </div>
-                  <div className={styles.date}>Created at {work.year}</div>
+                  <div className={styles.date}>
+                    Created at {work.year}
+                  </div>
                 </div>
               </div>
             </div>
